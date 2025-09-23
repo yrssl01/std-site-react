@@ -1,0 +1,17 @@
+@media (max-width: 1280px) {
+  .main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-wrapper {
+    flex-direction: column;
+  }
+}
