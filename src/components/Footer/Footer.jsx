@@ -2,7 +2,7 @@ import '../../styles/Footer.css'
 
 function Footer() {
   return (
-    <footer className="bg-[#282828] text-white">
+    <footer className="bg-[#4d4d4d] text-white">
       <div className="mx-auto max-w-screen-2xl flex flex-col p-6 gap-4 bottom-0">
         <h1 className="text-xl md:text-2xl font-medium">Свяжитесь с нами</h1>
         <p className="text-sm">
