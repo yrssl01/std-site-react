@@ -1,26 +1,27 @@
-import { useState } from 'react'
 import '../../styles/ServiceCard.css'
 
-function ServiceCard({ title, content, image }) {
-  const [isHovered, setIsHovered] = useState(false)
+function ServiceCard({ title, content, image, isExpanded, onToggle }) {
   return (
     <div
-      className={`transition-all duration-600 overflow-hidden card flex flex-col p-8 gap-2.5 text-[#101014] bg-white rounded-xl items-center justify-center grow basis-0 ${
-        isHovered ? 'h-96' : 'h-44'
+      className={`bg-white shadow-md shadow-gray-500/50 rounded-2xl overflow-hidden grow basis-0 transition-all duration-300 text-[#101014] ${
+        isExpanded ? 'max-h-96' : 'max-h-44'
       }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
-      {image && <div className="card-image w-20 shrink-0">{image}</div>}
-      <div className="card-body text-center flex flex-col gap-2 items-center ">
-        <h3 className="card-title text-lg shrink-0">{title}</h3>
+      <div
+        className="flex flex-col cursor-pointer p-6 items-center"
+        onClick={onToggle}
+      >
+        <div>
+          <img src={image} alt={title} style={{ height: '80px' }} />
+        </div>
+        <div className="text-lg font-medium text-center">{title}</div>
       </div>
       <div
-        className={`card-content shrink-0 transition duration-600 ${
-          isHovered ? 'opacity-100 mt-4' : 'opacity-0 mt-0 h-0'
+        className={`overflow-hidden px-5 pb-5 transition-all duration-300 ${
+          isExpanded ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <p className="leading-relaxed">{content}</p>
+        <div>{content}</div>
       </div>
     </div>
   )

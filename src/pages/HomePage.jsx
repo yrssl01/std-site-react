@@ -14,7 +14,7 @@ function HomePage() {
   }, [])
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center mt-20">
       <div className="flex items-center gap-7 main px-20">
         <div className="flex flex-col gap-6 w-1/3 text-[#101014]">
           <h1 className="text-4xl whitespace-nowrap uppercase font-medium">
