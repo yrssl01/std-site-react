@@ -4,6 +4,7 @@ import searchIcon from '../../assets/search.png'
 import buildingIcon from '../../assets/buildings.png'
 import controlIcon from '../../assets/control.png'
 import helmetIcon from '../../assets/helmet.png'
+import '../../styles/ServicesSection.css'
 
 function ServicesSection() {
   const serviceCards = [
@@ -44,14 +45,11 @@ function ServicesSection() {
   }
 
   return (
-    <section
-      className="flex flex-col gap-5 px-20 bg-[#4d4d4d] text-white"
-      style={{ minHeight: '430px' }}
-    >
+    <section className="flex flex-col gap-5 px-20 bg-[#4d4d4d] text-white min-h-[430px]">
       <div>
         <h2 className="text-2xl">Услуги</h2>
       </div>
-      <div className="flex justify-between gap-10">
+      <div className="services-container flex justify-center md:justify-between gap-10 flex-wrap">
         {serviceCards.map((card) => (
           <ServiceCard
             key={card.id}

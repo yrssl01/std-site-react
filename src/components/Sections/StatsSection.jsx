@@ -4,8 +4,8 @@ function StatsSection() {
       <div>
         <h2 className="text-2xl">Ключевые показатели</h2>
       </div>
-      <div className="flex justify-around gap-8 items-center">
-        <div className="flex flex-col">
+      <div className="flex justify-center md:justify-around gap-8 items-center flex-wrap">
+        <div className="flex flex-col justify-center items-center grow basis-0">
           <svg
             width="127px"
             height="127px"
@@ -27,9 +27,9 @@ function StatsSection() {
             </g>
           </svg>
           <h3 className="font-bold text-2xl mt-2">18</h3>
-          <p className="text-lg">лет на рынке</p>
+          <p className="text-lg text-center">лет на рынке</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center grow basis-0">
           <svg
             width="127px"
             height="127px"
@@ -58,9 +58,9 @@ function StatsSection() {
             </g>
           </svg>
           <h3 className="font-bold text-2xl mt-2">5</h3>
-          <p className="text-lg">компаний в составе группы</p>
+          <p className="text-lg text-center">компаний в составе группы</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center grow basis-0">
           <svg
             version="1.0"
             id="Layer_1"
@@ -117,9 +117,9 @@ function StatsSection() {
             </g>
           </svg>
           <h3 className="text-2xl font-bold mt-2">398</h3>
-          <p className="text-lg">объектов в прошли через нас</p>
+          <p className="text-lg text-center">объектов в прошли через нас</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col justify-center items-center grow basis-0">
           <svg
             width="127px"
             height="127px"
@@ -188,7 +188,7 @@ function StatsSection() {
             </g>
           </svg>
           <h3 className="font-bold text-2xl mt-2">1</h3>
-          <p className="text-lg">категория лицензий</p>
+          <p className="text-lg text-center">категория лицензий</p>
         </div>
       </div>
     </section>

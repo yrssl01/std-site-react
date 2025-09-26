@@ -12,20 +12,32 @@ nav {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: #101014;
+  background-color: white;
   margin: 2px 0;
   transition: all 0.3s ease;
+}
+
+svg path {
+  transition: ease 0.3s;
+}
+
+#whatsapp:hover path {
+  fill: lightgreen;
+}
+
+#instagram:hover path {
+  fill: lightpink;
 }
 
 @media (max-width: 1440px) {
   ul {
     position: fixed;
     overflow-y: auto;
-    top: 105px;
+    top: 110px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 105px);
-    background-color: white;
+    height: calc(100vh - 110px);
+    background-color: #4d4d4d;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
