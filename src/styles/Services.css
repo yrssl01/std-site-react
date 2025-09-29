@@ -1,0 +1,15 @@
+.services ul {
+  list-style: circle;
+}
+
+.services ul ul {
+  margin-left: 1.5rem;
+}
+
+.services ol {
+  list-style: decimal;
+}
+
+.services ol > li {
+  margin-bottom: 1rem;
+}

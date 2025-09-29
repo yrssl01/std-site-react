@@ -15,8 +15,8 @@ function Header() {
   }
 
   return (
-    <nav className="bg-[#4d4d4d] border-gray-200 dark:bg-gray-900 dark:border-gray-700 text-white sticky top-0 px-20 py-6 md:py-10">
-      <div className="mx-auto max-w-screen-2xl flex items-center justify-between ">
+    <nav className="bg-[#4d4d4d] border-gray-200 dark:bg-gray-900 dark:border-gray-700 text-white sticky 2xl:static top-0 px-20 py-6 md:py-10">
+      <div className="mx-auto flex items-center justify-between ">
         <Link to="/" className="flex items-center rtl:space-x-reverse gap-6">
           <span className="self-center text-2xl font-normal whitespace-nowrap dark:text-white uppercase">
             Project <br className=" block md:hidden" /> Construction Group

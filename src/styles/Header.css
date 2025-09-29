@@ -30,7 +30,7 @@ svg path {
 }
 
 @media (max-width: 1440px) {
-  ul {
+  nav ul {
     position: fixed;
     overflow-y: auto;
     top: 110px;
@@ -46,11 +46,11 @@ svg path {
     z-index: 1000;
   }
 
-  ul.active {
+  nav ul.active {
     left: 0;
   }
 
-  ul li {
+  nav ul li {
     margin: 1.5rem 0;
   }
 

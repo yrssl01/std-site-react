@@ -1,5 +1,19 @@
+import '../styles/Services.css'
+import servicesData from '../components/Sections/services.json'
+
 function Services() {
-  return <section className="h-screen">Services page</section>
+  return (
+    <section className="services flex flex-col gap-4 px-20">
+      {servicesData.map((service) => (
+        <div>
+          <h1 id={service.link} className="text-2xl uppercase font-semibold">
+            {service.title}
+          </h1>
+          <div dangerouslySetInnerHTML={{ __html: service.content }} />
+        </div>
+      ))}
+    </section>
+  )
 }
 
 export default Services

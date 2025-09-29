@@ -5,38 +5,44 @@ import buildingIcon from '../../assets/buildings.png'
 import controlIcon from '../../assets/control.png'
 import helmetIcon from '../../assets/helmet.png'
 import '../../styles/ServicesSection.css'
+import servicesData from './services.json'
+import ss from '../../assets/service-icons/map.png'
 
 function ServicesSection() {
-  const serviceCards = [
-    {
-      id: 1,
-      title: 'Техническое обследование',
-      image: searchIcon,
-      content:
-        'Комплекс мероприятий, позволяющие гарантировать безопасность и своевременное выявление недостатков эксплуатируемых объектов.',
-    },
-    {
-      id: 2,
-      title: 'Проектирование',
-      image: buildingIcon,
-      content:
-        'Это комплекс работ, который предшествует строительству, позволяющий минимизировать риски в процессе строительства.',
-    },
-    {
-      id: 3,
-      title: 'Авторский надзор',
-      image: controlIcon,
-      content:
-        'Это комплекс работ, направленных на контроль процесса строительства, с целью соблюдения стилистических, архитектурных, технических и др. проектных решений, обозначенных в проектной документации.',
-    },
-    {
-      id: 4,
-      title: 'Технический и строительный аудит',
-      image: helmetIcon,
-      content:
-        'Это комплекс экспертных мероприятий, направленный на выявление недостатков и нарушений, допущенных в ходе выполнения проектно-сметных, строительно-монтажных и ремонтно-отделочных работ.',
-    },
-  ]
+  // const serviceCards = [
+  //   {
+  //     id: 1,
+  //     title: 'Техническое обследование',
+  //     link: 'research',
+  //     image: searchIcon,
+  //     content:
+  //       'Комплекс мероприятий, позволяющие гарантировать безопасность и своевременное выявление недостатков эксплуатируемых объектов.',
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Проектирование',
+  //     link: 'project',
+  //     image: buildingIcon,
+  //     content:
+  //       'Это комплекс работ, который предшествует строительству, позволяющий минимизировать риски в процессе строительства.',
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Авторский надзор',
+  //     link: 'inspect',
+  //     image: controlIcon,
+  //     content:
+  //       'Это комплекс работ, направленных на контроль процесса строительства, с целью соблюдения стилистических, архитектурных, технических и др. проектных решений, обозначенных в проектной документации.',
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Технический и строительный аудит',
+  //     link: 'audit',
+  //     image: helmetIcon,
+  //     content:
+  //       'Это комплекс экспертных мероприятий, направленный на выявление недостатков и нарушений, допущенных в ходе выполнения проектно-сметных, строительно-монтажных и ремонтно-отделочных работ.',
+  //   },
+  // ]
 
   const [expandedId, setExpandedId] = useState(null)
 
@@ -49,8 +55,8 @@ function ServicesSection() {
       <div>
         <h2 className="text-2xl">Услуги</h2>
       </div>
-      <div className="services-container flex justify-center md:justify-between gap-10 flex-wrap">
-        {serviceCards.map((card) => (
+      <div className="services-container flex justify-around gap-10 flex-wrap">
+        {servicesData.map((card) => (
           <ServiceCard
             key={card.id}
             {...card}

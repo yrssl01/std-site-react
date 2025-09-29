@@ -1,5 +1,5 @@
 import '../styles/HomePage.css'
-import ServiceCard from '../components/ServiceCard/ServiceCard'
+
 import videoFile from '../assets/Video8.mp4'
 
 import { useEffect, useRef } from 'react'
