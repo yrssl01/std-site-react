@@ -3,7 +3,7 @@ import servicesData from '../components/Sections/services.json'
 
 function Services() {
   return (
-    <section className="services flex flex-col gap-4 px-20">
+    <section className="services flex flex-col gap-4 px-20 mt-20">
       {servicesData.map((service) => (
         <div>
           <h1 id={service.link} className="text-2xl uppercase font-semibold">

@@ -51,19 +51,21 @@ function ServicesSection() {
   }
 
   return (
-    <section className="flex flex-col gap-5 px-20 bg-[#4d4d4d] text-white min-h-[430px]">
-      <div>
-        <h2 className="text-2xl">Услуги</h2>
-      </div>
-      <div className="services-container flex justify-around gap-10 flex-wrap">
-        {servicesData.map((card) => (
-          <ServiceCard
-            key={card.id}
-            {...card}
-            isExpanded={expandedId === card.id}
-            onToggle={() => toggleExpand(card.id)}
-          />
-        ))}
+    <section className=" bg-[#4d4d4d] text-white min-h-[670px]">
+      <div className="flex flex-col gap-5 px-20">
+        <div>
+          <h2 className="text-2xl">Услуги</h2>
+        </div>
+        <div className="services-container flex justify-around gap-10 flex-wrap">
+          {servicesData.map((card) => (
+            <ServiceCard
+              key={card.id}
+              {...card}
+              isExpanded={expandedId === card.id}
+              onToggle={() => toggleExpand(card.id)}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )
