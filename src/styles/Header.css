@@ -26,7 +26,7 @@ svg path {
 }
 
 #instagram:hover path {
-  fill: lightpink;
+  fill: deeppink;
 }
 
 @media (max-width: 1440px) {

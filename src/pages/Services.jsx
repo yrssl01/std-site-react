@@ -5,7 +5,7 @@ function Services() {
   return (
     <section className="services flex flex-col gap-4 px-20 mt-20">
       {servicesData.map((service) => (
-        <div>
+        <div key={service.id}>
           <h1 id={service.link} className="text-2xl uppercase font-semibold">
             {service.title}
           </h1>

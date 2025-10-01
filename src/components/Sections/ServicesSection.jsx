@@ -51,12 +51,12 @@ function ServicesSection() {
   }
 
   return (
-    <section className=" bg-[#4d4d4d] text-white min-h-[670px]">
-      <div className="flex flex-col gap-5 px-20">
+    <section className=" bg-[#4d4d4d] text-white min-h-[800px]">
+      <div className="flex flex-col gap-5 px-20 max-w-screen-3xl mx-auto ">
         <div>
           <h2 className="text-2xl">Услуги</h2>
         </div>
-        <div className="services-container flex justify-around gap-10 flex-wrap">
+        <div className="services-container flex justify-around gap-y-16 gap-x-4 flex-wrap">
           {servicesData.map((card) => (
             <ServiceCard
               key={card.id}
