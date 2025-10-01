@@ -1,12 +1,8 @@
 import ServiceCard from '../ServiceCard/ServiceCard'
 import { useState } from 'react'
-import searchIcon from '../../assets/search.png'
-import buildingIcon from '../../assets/buildings.png'
-import controlIcon from '../../assets/control.png'
-import helmetIcon from '../../assets/helmet.png'
+
 import '../../styles/ServicesSection.css'
 import servicesData from './services.json'
-import ss from '../../assets/service-icons/map.png'
 
 function ServicesSection() {
   // const serviceCards = [
