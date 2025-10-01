@@ -3,6 +3,7 @@
 
 @theme {
   --breakpoint-2xl: 90rem;
+  --breakpoint-3xl: 96rem;
 }
 
 @layer base {

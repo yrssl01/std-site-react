@@ -12,7 +12,7 @@ nav {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #101014;
   margin: 2px 0;
   transition: all 0.3s ease;
 }
@@ -37,7 +37,7 @@ svg path {
     left: -100%;
     width: 100%;
     height: calc(100vh - 110px);
-    background-color: #4d4d4d;
+    background-color: white;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
