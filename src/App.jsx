@@ -9,12 +9,12 @@ import Experience from './pages/Experience'
 import Professionals from './pages/Professionals'
 import Contact from './pages/Contact'
 import Footer from './components/Footer/Footer'
+import ScrollManager from './components/ScrollManager'
 
 function App() {
   return (
     <>
       <Header />
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<About />}></Route>

@@ -1,4 +1,4 @@
-import { HashLink } from 'react-router-hash-link'
+import { Link } from 'react-router-dom'
 import '../../styles/ServiceCard.css'
 
 function ServiceCard({
@@ -10,7 +10,7 @@ function ServiceCard({
   onToggle,
 }) {
   return (
-    <div className="flex flex-col max-w-[345px] grow shrink basis-[400px] gap-4">
+    <div className="flex flex-col max-w-[360px] grow shrink basis-[400px] gap-4">
       <div
         className={`bg-white shadow-md cursor-pointer shadow-gray-500/50 rounded-2xl overflow-hidden transition-all duration-300 text-[#101014] ${
           isExpanded ? 'max-h-[420px]' : 'max-h-44'
@@ -31,13 +31,17 @@ function ServiceCard({
           <div>{description}</div>
         </div>
       </div>
-      <div className="text-center">
-        <HashLink
-          to={`/services#${link}`}
+      <div className="text-center flex self-center">
+        <Link
+          // `/services#${link}`
+          to={{
+            pathname: '/services',
+            hash: link,
+          }}
           className="transition duration-300 bg-[#26bbff] hover:bg-[#8dd5ff] px-4 py-2 rounded-lg text-sm"
         >
           Узнать больше
-        </HashLink>
+        </Link>
       </div>
     </div>
   )

@@ -3,14 +3,15 @@ import '../styles/HomePage.css'
 import videoFile from '../assets/Video8.mp4'
 import StatsSection from '../components/Sections/StatsSection'
 import ServicesSection from '../components/Sections/ServicesSection'
+import ProjectsSection from '../components/Sections/ProjectsSection'
 
 function HomePage() {
   return (
     <>
-      <section className="flex flex-col items-center mt-20 max-w-screen-3xl mx-auto px-20 ">
-        <div className="flex items-center gap-7 main  ">
+      <section className="flex flex-col items-center mt-20 max-w-screen-3xl mx-auto px-10 ">
+        <div className="flex items-center gap-7 main">
           <div className="flex flex-col gap-6 w-1/3 text-[#101014]">
-            <h1 className="text-4xl whitespace-nowrap uppercase font-medium">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl whitespace-nowrap uppercase font-medium">
               Высокое качество
               <br />и профессионализм
             </h1>
@@ -42,7 +43,7 @@ function HomePage() {
           </div>
         </div>
         <div className="wrapper flex justify-between mt-20">
-          <div className="max-w-3/5 flex flex-col gap-5">
+          <div className="w-full xl:w-3/5  flex flex-col gap-5">
             <h2 className="text-2xl">О компании</h2>
             <p>
               Команда профессионалов, в сфере инжиниринговых услуг. Мы оказываем
@@ -64,6 +65,7 @@ function HomePage() {
         {' '}
         <StatsSection />
         <ServicesSection />
+        <ProjectsSection />
       </section>
     </>
   )

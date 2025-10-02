@@ -2,6 +2,7 @@
 @import 'tailwindcss';
 
 @theme {
+  --breakpoint-2md: 56rem;
   --breakpoint-2xl: 90rem;
   --breakpoint-3xl: 96rem;
 }
@@ -13,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     font-family: Inter, sans-serif;
   }
 

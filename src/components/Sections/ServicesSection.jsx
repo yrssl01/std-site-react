@@ -47,8 +47,8 @@ function ServicesSection() {
   }
 
   return (
-    <section className=" bg-[#4d4d4d] text-white min-h-[800px]">
-      <div className="flex flex-col gap-5 px-20 max-w-screen-3xl mx-auto ">
+    <section className=" bg-[#4d4d4d] text-white min-h-[825px] py-4">
+      <div className="flex flex-col gap-5 px-10 max-w-screen-3xl mx-auto">
         <div>
           <h2 className="text-2xl">Услуги</h2>
         </div>

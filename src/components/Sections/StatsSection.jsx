@@ -1,7 +1,7 @@
 function StatsSection() {
   return (
     <section className="w-full bg-[#4d4d4d] text-white pt-6 mt-20 pb-20">
-      <div className="flex flex-col gap-5 max-w-screen-3xl px-20 mx-auto">
+      <div className="flex flex-col gap-5 max-w-screen-3xl px-10 mx-auto">
         <div>
           <h2 className="text-2xl">Ключевые показатели</h2>
         </div>
