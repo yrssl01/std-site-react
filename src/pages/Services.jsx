@@ -6,8 +6,13 @@ function Services() {
     <section className="services flex flex-col gap-4 px-20 mt-20">
       {servicesData.map((service) => (
         <div key={service.id} id={service.link}>
-          <h1 className="text-2xl uppercase font-semibold">{service.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: service.content }} />
+          <h1 className="text-xl sm:text-2xl uppercase font-semibold">
+            {service.title}
+          </h1>
+          <div
+            dangerouslySetInnerHTML={{ __html: service.content }}
+            className="text-sm sm:text-base"
+          />
         </div>
       ))}
     </section>

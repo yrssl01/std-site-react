@@ -13,3 +13,13 @@
 .services ol > li {
   margin-bottom: 1rem;
 }
+
+[id] {
+  scroll-margin-top: 0;
+}
+
+@media (max-width: 1439px) {
+  [id] {
+    scroll-margin-top: -125px;
+  }
+}

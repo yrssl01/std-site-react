@@ -15,7 +15,7 @@ function Header() {
   }
 
   return (
-    <nav className="bg-white border-gray-200 text-[#101014] sticky 2xl:static top-0 py-6 md:py-10">
+    <nav className="site-navbar bg-white border-gray-200 text-[#101014] sticky 2xl:static top-0 py-6 md:py-10">
       <div className="flex items-center justify-between px-10 max-w-screen-3xl mx-auto ">
         <Link to="/" className="flex items-center gap-6">
           <span className="self-center text-xl sm:text-2xl font-normal whitespace-nowrap uppercase">

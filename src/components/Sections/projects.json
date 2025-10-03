@@ -3,35 +3,35 @@
     "id": 1,
     "title": "Административные здания",
     "description": "Ультрасовременное здание, с актуальным дизайном и эффективными строительными решениями",
-    "imageUrl": "https://placehold.co/600x400",
+    "imageUrl": "src/assets/projects/administrative-building.jpg",
     "bg": "bg-slate-100"
   },
   {
     "id": 2,
     "title": "Офис Tiens - Казахстан",
     "description": null,
-    "imageUrl": "https://placehold.co/600x400",
+    "imageUrl": "src/assets/projects/tiens.jpg",
     "bg": "bg-slate-200"
   },
   {
     "id": 3,
     "title": "Медицинский центр",
     "description": "Общая площадь составляет 10500 м²",
-    "imageUrl": "https://placehold.co/600x400",
+    "imageUrl": "src/assets/projects/medcenter.jpg",
     "bg": "bg-slate-300"
   },
   {
     "id": 4,
     "title": "Бизнес-центр",
     "description": "Общая площадь составляет 23141 м²",
-    "imageUrl": "https://placehold.co/600x400",
+    "imageUrl": "src/assets/projects/business-center.jpg",
     "bg": "bg-slate-400"
   },
   {
     "id": 5,
     "title": "Реконструкция нежилого здания Пресс-клуба",
     "description": null,
-    "imageUrl": "https://placehold.co/600x400",
+    "imageUrl": "src/assets/projects/press-club.jpg",
     "bg": "bg-slate-500"
   }
 ]

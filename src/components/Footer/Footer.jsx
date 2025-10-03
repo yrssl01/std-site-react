@@ -3,8 +3,8 @@ import '../../styles/Footer.css'
 function Footer() {
   return (
     <footer className="bg-[#4d4d4d] text-white">
-      <div className="mx-auto max-w-screen-3xl flex flex-col px-20 py-6 gap-4 bottom-0">
-        <h1 className="text-xl md:text-2xl font-medium">Свяжитесь с нами</h1>
+      <div className="mx-auto max-w-screen-3xl flex flex-col px-10 sm:px-20 py-6 gap-4 bottom-0 ">
+        <h1 className="text-xl sm:text-2xl font-medium">Свяжитесь с нами</h1>
         <p className="text-sm">
           Готовы начать свой проект или узнать больше о наших услугах? Мы всегда
           на связи и ждем вашего обращения.

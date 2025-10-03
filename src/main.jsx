@@ -9,7 +9,7 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      <ScrollManager />
+      <ScrollManager headerSelector=".site-navbar" />
 
       <App />
     </Router>
