@@ -3,6 +3,7 @@
 
 @theme {
   --breakpoint-2md: 56rem;
+  --breakpoint-1.5xl: 82.5rem;
   --breakpoint-2xl: 90rem;
   --breakpoint-3xl: 96rem;
 }

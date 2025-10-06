@@ -1,5 +1,6 @@
 import PROJECTS from './projects.json'
 import Project from '../Project/Project'
+import Carousel from '../Carousel/Carousel'
 
 function ProjectsSection() {
   return (
@@ -8,11 +9,12 @@ function ProjectsSection() {
         <div>
           <h1 className="text-2xl font-medium">Наши проекты</h1>
         </div>
-        <div className="wrapper flex flex-col gap-4">
+        {/* <div className="wrapper flex flex-col gap-4">
           {PROJECTS.map((p) => (
             <Project key={p.id} {...p} />
           ))}
-        </div>
+        </div> */}
+        <Carousel projects={PROJECTS} />
       </div>
     </section>
   )
