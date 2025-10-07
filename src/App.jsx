@@ -9,7 +9,8 @@ import Experience from './pages/Experience'
 import Professionals from './pages/Professionals'
 import Contact from './pages/Contact'
 import Footer from './components/Footer/Footer'
-import ScrollManager from './components/ScrollManager'
+import ProjectDetail from './components/ProjectDetail'
+import Loading from './components/Loading'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/experience" element={<Experience />}></Route>
+        <Route path="/experience/projects/:id" element={<ProjectDetail />} />
         <Route path="/professionals" element={<Professionals />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>

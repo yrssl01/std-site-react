@@ -4,6 +4,7 @@ import videoFile from '../assets/Video8.mp4'
 import StatsSection from '../components/Sections/StatsSection'
 import ServicesSection from '../components/Sections/ServicesSection'
 import ProjectsSection from '../components/Sections/ProjectsSection'
+import ProjectList from '../components/ProjectList'
 
 function HomePage() {
   return (
