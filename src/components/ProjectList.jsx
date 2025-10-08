@@ -38,15 +38,18 @@ export default function ProjectList() {
   if (err) return <Loading />
 
   return (
-    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto md:auto-rows-fr">
+    <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto md:auto-rows-fr justify-center">
       {items.map((p) => (
-        <article className="h- rounded-2xl border shadow-sm flex flex-col overflow-visible">
+        <article
+          key={p.id}
+          className=" rounded-2xl border shadow-sm flex flex-col overflow-visible"
+        >
           {/* media */}
-          <div className="aspect-[16/9] w-full bg-gray-100 rounded-2xl">
+          <div className="aspect-[16/9] h-56 w-full bg-gray-100 rounded-2xl">
             {p.blueprint && (
               <img
                 src={mediaUrl(p.blueprint)}
-                alt=""
+                alt={p.title}
                 className="h-full w-full object-cover rounded-2xl"
               />
             )}
@@ -68,7 +71,7 @@ export default function ProjectList() {
                 {p.services.map((s) => (
                   <span
                     key={s.id}
-                    className="rounded-full bg-gray-100 px-2 py-1 text-xs"
+                    className="rounded-full border border-stone-300 bg-gray-100 px-2 py-1 text-xs"
                   >
                     {s.name}
                   </span>

@@ -1,14 +1,20 @@
 import { useLocation } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
 
 function About() {
-  // const location = useLocation()
+  const location = useLocation()
+  const lastHash = useRef('')
 
-  // if (location.hash) {
-  //   let elem = document.getElementById(location.hash.slice(1))
-  //   if (elem) {
-  //     elem.scrollIntoView({ behavior: 'smooth' })
-  //   }
-  // }
+  useEffect(() => {
+    if (location.hash) {
+      lastHash.current = location
+      let elem = document.getElementById(location.hash.slice(1))
+      if (elem) {
+        elem.scrollIntoView({ behavior: 'smooth' })
+      }
+  }
+  })
+  
 
   return (
     <section>
