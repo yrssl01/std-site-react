@@ -1,5 +1,5 @@
 function Professionals() {
-  return <section className="h-screen">Professionals page</section>
+  return <section className="">Professionals page</section>
 }
 
 export default Professionals

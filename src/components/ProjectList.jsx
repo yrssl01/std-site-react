@@ -45,7 +45,7 @@ export default function ProjectList() {
           className=" rounded-2xl border shadow-sm flex flex-col overflow-visible"
         >
           {/* media */}
-          <div className="aspect-[16/9] h-56 w-full bg-gray-100 rounded-2xl">
+          <div className="aspect-[16/9] max-h-56 w-full bg-gray-100 rounded-2xl">
             {p.blueprint && (
               <img
                 src={mediaUrl(p.blueprint)}

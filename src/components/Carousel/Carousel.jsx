@@ -42,13 +42,13 @@ export default function Carousel({ projects }) {
 
   return (
     <div className="relative select-none">
-      <div className="pointer-events-none absolute inset-y-0 left-1/2 -translate-x-1/2 w-screen z-10">
-        <div className="flex items-center justify-between h-full px-2 sm:px-8">
+      <div className="pointer-events-none absolute inset-y-0 inset-x-0 z-10">
+        <div className="flex items-center justify-between h-full px-2 sm:px-8 mx-[calc(50%-49vw)]">
           <button
             aria-label="Previous"
             onClick={prev}
             disabled={index === 0}
-            className="hidden 2md:flex pointer-events-auto flex-col items-center justify-center rounded-full h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] bg-[#d3d3d3] hover:bg-[#7c7c7c] cursor-pointer shadow disabled:opacity-40 disabled:pointer-events-none"
+            className="hidden lg:flex pointer-events-auto flex-col items-center justify-center rounded-full h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] bg-[#d3d3d3] hover:bg-[#7c7c7c] cursor-pointer shadow disabled:opacity-40 disabled:pointer-events-none"
           >
             ‹
           </button>
@@ -56,7 +56,7 @@ export default function Carousel({ projects }) {
             aria-label="Next"
             onClick={next}
             disabled={index === maxIndex}
-            className="hidden 2md:flex pointer-events-auto flex-col items-center justify-center rounded-full h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] bg-[#d3d3d3] hover:bg-[#7c7c7c] cursor-pointer shadow disabled:opacity-40 disabled:pointer-events-none"
+            className="hidden lg:flex pointer-events-auto flex-col items-center justify-center rounded-full h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] bg-[#d3d3d3] hover:bg-[#7c7c7c] cursor-pointer shadow disabled:opacity-40 disabled:pointer-events-none"
           >
             ›
           </button>
@@ -74,7 +74,7 @@ export default function Carousel({ projects }) {
             className="snap-center flex-none w-full px-4"
           >
             <div
-              className={`mx-auto max-w-2xl md:max-w-3xl lg:max-w-4xl 1.5xl:max-w-6xl`}
+              className={`mx-auto max-w-2xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-7xl `}
             >
               <ProjectCard {...p} />
             </div>

@@ -55,7 +55,7 @@ function HomePage() {
           <div className="flex items-start">
             <a
               href="#"
-              className="transition duration-300 bg-[#26bbff] hover:bg-[#8dd5ff] px-4 py-2 rounded-lg text-sm"
+              className="transition duration-300 bg-[#26bbff] hover:bg-[#26bbffcc] px-4 py-2 rounded-lg text-sm"
             >
               Подробнее
             </a>

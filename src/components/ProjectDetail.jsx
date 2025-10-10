@@ -54,15 +54,15 @@ export default function ProjectDetail() {
             <img
               src={mediaUrl(p.blueprint)}
               alt={`${p.title} blueprint`}
-              className="mb-4 w-2xl rounded-xl object-cover aspect-[16/9]"
+              className="mb-4 w-2xl aspect-[16/9]"
             />
           )}
         </div>
       </div>
-      <hr className="mt-4 text-stone-300" />
+      <hr className="mt-20 text-stone-300" />
       {!!gallery?.length && (
         <>
-          <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {gallery.map((g, i) => (
               <figure
                 key={i}
